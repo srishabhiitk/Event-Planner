@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="28sp"
+        android:layout_weight="0.5"
+        android:text="Reminder to" />
+    
+    
+    <TextView
+        android:id="@+id/tvRemindTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="36sp"
+        android:layout_weight="0.25"
+        android:text="Title" />
+    
+    <TextView
+        android:id="@+id/tvRemindSummary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="36sp"
+        android:layout_weight="0.25"
+        android:text="Summary" />
+    
+    <Button 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.05"
+        android:id="@+id/bCancelAlarm"
+        android:layout_gravity="center"
+        android:text="Cancel Alarm"/>
+
+</LinearLayout>

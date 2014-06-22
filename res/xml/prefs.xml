@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+        android:key="timestampparent"
+        android:title="Preferences" >
+
+        <EditTextPreference
+            android:defaultValue="1400666400000"
+            android:enabled="false"
+            android:key="timestamp"
+            android:title="Last Updated: It&apos;s history now!!" />
+        
+        <EditTextPreference
+            android:enabled="false"
+            android:key="alarmtone"
+            android:title="Alarm Tone" />
+
+        <ListPreference
+            android:defaultValue="1"
+            android:entries="@array/list"
+            android:entryValues="@array/listvalues"
+            android:key="filter"
+            android:summary="Filter events"
+            android:title="Show Events from:" />
+
+        <CheckBoxPreference
+            android:key="filterreminders"
+            android:summary="Only events you set reminders of will be shown."
+            android:title="Show only scheduled Events" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

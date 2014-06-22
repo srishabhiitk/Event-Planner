@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_update"
+        android:title="Update"/>
+    
+    <item
+        android:id="@+id/menu_preferences"
+        android:title="Preferences"/>
+    
+    <item
+        android:id="@+id/menu_alarmtone"
+        android:title="Choose an Alarm Tone"/>
+    
+    <item
+        android:id="@+id/menu_credentials"
+        android:title="Credentials"/>
+    
+    <item
+        android:id="@+id/menu_exit"
+        android:title="Exit"/>
+    
+    
+
+</menu>

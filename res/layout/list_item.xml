@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/text_wrap"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <TextView
+        android:id="@+id/tvLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A"
+        android:gravity="left"
+        android:textSize="48sp" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_toRightOf="@id/tvLogo"
+        android:layout_alignBaseline="@id/tvLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:gravity="left"
+        android:textSize="18sp" >
+    </TextView>
+    
+    <TextView
+        android:id="@+id/tvSummary"
+        android:layout_below="@id/tvLogo"
+        android:layout_alignLeft="@id/tvLogo"
+        android:gravity="left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Summary"
+        android:textSize="18sp" >
+    </TextView>
+    
+    <TextView
+        android:id="@+id/tvRemindChk"
+        android:layout_below="@id/tvSummary"
+        android:layout_alignLeft="@id/tvLogo"
+        android:gravity="left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You will be reminded of this Event."
+        android:textSize="18sp" >
+    </TextView>
+        
+    </RelativeLayout>
+    
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        android:textSize="18sp" >
+    </TextView>
+    
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textSize="18sp" >
+    </TextView>
+    
+    
+      <TextView
+        android:id="@+id/tvDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Detail"
+        android:textSize="18sp" >
+    </TextView>
+    
+      <TextView
+        android:id="@+id/tvRemind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reminder is Set!!!"
+        android:visibility="gone"
+        android:textSize="18sp" >
+    </TextView>
+
+    <Button
+        android:id="@+id/bRemind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remind Me"
+        android:onClick="setReminder" />
+    
+    <Button
+        android:id="@+id/bRemind15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remind me 15 min early"
+        android:visibility="gone"    />
+    <Button
+        android:id="@+id/bRemind30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remind Me 30 min early"
+        android:visibility="gone"  />
+    
+    <Button
+        android:id="@+id/bRemind45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remind Me 45 min early"
+        android:visibility="gone"  />
+    
+    <Button
+        android:id="@+id/bRemind60"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remind Me 60 min early"
+        android:visibility="gone"  />
+    
+   
+</LinearLayout>
